@@ -6,8 +6,8 @@ import Column from '../Column/Column';
 class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
-    image: PropTypes.string,
     children: PropTypes.node.isRequired,
+    source: PropTypes.string.isRequired,
   }
   static defaultProps = {
     children: <p>I can do all the things!!!</p>,
@@ -15,8 +15,10 @@ class List extends React.Component {
     render() {
       return (
         <section className={styles.component}>
-           <Hero> titleText={this.props.title} imageHero={this.props.image}</Hero>
-           <div className={styles.description}>{this.props.children}</div>
+           <Hero titleText={this.props.title} imageSource={this.props.source}/>
+           <div className={styles.description}>
+             {this.props.children}
+           </div>
            <div className={styles.columns}>
               <Column title={'Animals'} />
               <Column title={'Plants'} />

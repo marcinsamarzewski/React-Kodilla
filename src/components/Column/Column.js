@@ -9,13 +9,11 @@ class Column extends React.Component {
     state = {
         cards: this.props.cards || [],
       } 
-
       static propTypes = {
           cards: PropTypes.array,  
           title: PropTypes.string.isRequired,
           icon: PropTypes.string,
         }
-
         addCard(title){
           this.setState(state => (
             {
@@ -29,7 +27,6 @@ class Column extends React.Component {
             }
           ));
         }
-
     render() {
         return (
             <section className={styles.component}>

@@ -10,7 +10,7 @@ class App extends React.Component {
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         <List {...listData} />
       </main>
-    )
+    );
   }
 }
 export default App;

@@ -10,7 +10,7 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
-  searchString: '',
+  searchString: 'ter',
 };
 
 // define reducers

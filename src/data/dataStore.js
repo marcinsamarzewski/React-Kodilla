@@ -18,7 +18,16 @@ export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
-
+export const InfoData = {
+  title: 'All information in one place',
+  content: 'Interesting things I want to check out!',
+  image: 'https://source.unsplash.com/random',
+};
+export const FaqData = {
+  title: 'All Questions in one place',
+  content: 'Interesting things I want to check out!',
+  image: 'https://source.unsplash.com/random',
+};
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
